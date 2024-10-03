@@ -16,4 +16,8 @@ public class Flower {
     private double price;
     private double sepalLength;
 
+    public String getColor() {
+        return this.color.getRgb();
+    }
+
 }
