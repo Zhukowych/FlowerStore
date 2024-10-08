@@ -6,7 +6,7 @@ public enum FlowerColor {
 
     private final String rgb;
 
-    private FlowerColor(String rgb) {
+    FlowerColor(String rgb) {
         this.rgb = rgb;
     }
 

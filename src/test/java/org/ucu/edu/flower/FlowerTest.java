@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
-import org.ucu.edu.flower.FlowerColor;
 
 public class FlowerTest {
     private static final Random RANDOM_GENERATOR = new Random();
