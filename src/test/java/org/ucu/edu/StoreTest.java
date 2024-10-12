@@ -12,20 +12,23 @@ import java.util.ArrayList;
 
 public class StoreTest {
 
+    private static final double SAMPLE_PRICE = 10;
+    private static final double SAMPLE_SEPTAL_LENGTH = 10;
+
     private Flower flowerRose;
     private Flower flowerTulip;
     private Flower flowerChamomile;
     private Store store;
     private ArrayList<Flower> flowers;
 
-    private static final double SAMPLE_PRICE = 10;
-    private static final double SAMPLE_SEPTAL_LENGTH = 10;
-
     @BeforeEach
     public void init() {
-        flowerRose = new Flower(FlowerType.ROSE, FlowerColor.RED, SAMPLE_PRICE, SAMPLE_SEPTAL_LENGTH);
-        flowerTulip = new Flower(FlowerType.TULIP, FlowerColor.RED, SAMPLE_PRICE, SAMPLE_SEPTAL_LENGTH);
-        flowerChamomile = new Flower(FlowerType.CHAMOMILE, FlowerColor.RED, SAMPLE_PRICE, SAMPLE_SEPTAL_LENGTH);
+        flowerRose = new Flower(FlowerType.ROSE, FlowerColor.RED, SAMPLE_PRICE,
+                SAMPLE_SEPTAL_LENGTH);
+        flowerTulip = new Flower(FlowerType.TULIP, FlowerColor.RED, SAMPLE_PRICE,
+                SAMPLE_SEPTAL_LENGTH);
+        flowerChamomile = new Flower(FlowerType.CHAMOMILE, FlowerColor.RED, SAMPLE_PRICE,
+                SAMPLE_SEPTAL_LENGTH);
         flowers = new ArrayList<>();
         flowers.add(flowerRose);
         flowers.add(flowerTulip);
