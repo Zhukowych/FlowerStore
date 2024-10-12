@@ -14,11 +14,13 @@ public final class FlowerSpecification {
 
 
     public boolean match(FlowerSpecification flowerSpecification) {
-        if (flowerType != null && flowerSpecification.getFlowerType() != flowerType)
+        if (flowerType != null && flowerSpecification.getFlowerType() != flowerType) {
             return false;
+        }
 
-        if (color != null && flowerSpecification.getColor() != color)
+        if (color != null && flowerSpecification.getColor() != color) {
             return false;
+        }
 
         return true;
     }

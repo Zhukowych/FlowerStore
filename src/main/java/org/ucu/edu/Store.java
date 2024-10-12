@@ -29,8 +29,9 @@ public class Store {
         ArrayList<Flower> foundFlowers = new ArrayList<>();
 
         for (Flower flower : flowers) {
-            if (specification.match(flower.getSpecification()))
+            if (specification.match(flower.getSpecification())) {
                 foundFlowers.add(flower);
+            }
         }
 
         return foundFlowers;

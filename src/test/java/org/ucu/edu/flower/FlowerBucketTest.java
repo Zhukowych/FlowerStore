@@ -34,8 +34,8 @@ public class FlowerBucketTest {
         double price = 10;
         int quantity = 10;
         Flower flower = new Flower(FlowerType.TULIP);
-        flower.setPrice(10);
-        FlowerPack flowerPack = new FlowerPack(flower, 10);
+        flower.setPrice(price);
+        FlowerPack flowerPack = new FlowerPack(flower, quantity);
         flowerBucket.add(flowerPack);
         Assertions.assertEquals(price * quantity, flowerBucket.getPrice());
         flowerBucket.remove(flowerPack);
