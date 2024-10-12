@@ -17,7 +17,9 @@ public class FlowerBucket {
         packs.add(pack);
     }
 
-    public void remove(FlowerPack pack) {packs.remove(pack);}
+    public void remove(FlowerPack pack) {
+        packs.remove(pack);
+    }
 
     public double getPrice() {
         double totalPrice = 0;

@@ -7,7 +7,6 @@ import org.ucu.edu.flower.Flower;
 import org.ucu.edu.flower.FlowerColor;
 import org.ucu.edu.flower.FlowerSpecification;
 import org.ucu.edu.flower.FlowerType;
-import sun.jvm.hotspot.utilities.Assert;
 
 import java.util.ArrayList;
 
@@ -19,11 +18,14 @@ public class StoreTest {
     private Store store;
     private ArrayList<Flower> flowers;
 
+    private static final double SAMPLE_PRICE = 10;
+    private static final double SAMPLE_SEPTAL_LENGTH = 10;
+
     @BeforeEach
     public void init() {
-        flowerRose = new Flower(FlowerType.ROSE, FlowerColor.RED, 10, 10);
-        flowerTulip = new Flower(FlowerType.TULIP, FlowerColor.RED, 10, 10);
-        flowerChamomile = new Flower(FlowerType.CHAMOMILE, FlowerColor.RED, 10, 10);
+        flowerRose = new Flower(FlowerType.ROSE, FlowerColor.RED, SAMPLE_PRICE, SAMPLE_SEPTAL_LENGTH);
+        flowerTulip = new Flower(FlowerType.TULIP, FlowerColor.RED, SAMPLE_PRICE, SAMPLE_SEPTAL_LENGTH);
+        flowerChamomile = new Flower(FlowerType.CHAMOMILE, FlowerColor.RED, SAMPLE_PRICE, SAMPLE_SEPTAL_LENGTH);
         flowers = new ArrayList<>();
         flowers.add(flowerRose);
         flowers.add(flowerTulip);
