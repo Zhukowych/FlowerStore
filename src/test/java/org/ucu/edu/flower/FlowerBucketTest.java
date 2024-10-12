@@ -10,6 +10,8 @@ public class FlowerBucketTest {
     private static final Random RANDOM_GENERATOR = new Random();
     private static final int MAX_QUANTITY = 1000;
     private static final int MAX_PRICE = 100;
+    private static final double SAMPLE_PRICE = 10;
+    private static final double SAMPLE_QUANTITY = 10;
 
     private FlowerBucket flowerBucket;
 
@@ -31,13 +33,11 @@ public class FlowerBucketTest {
 
     @Test
     public void testPriceBucketRemove() {
-        double price = 10;
-        int quantity = 10;
         Flower flower = new Flower(FlowerType.TULIP);
-        flower.setPrice(price);
-        FlowerPack flowerPack = new FlowerPack(flower, quantity);
+        flower.setPrice(SAMPLE_PRICE);
+        FlowerPack flowerPack = new FlowerPack(flower, SAMPLE_QUANTITY);
         flowerBucket.add(flowerPack);
-        Assertions.assertEquals(price * quantity, flowerBucket.getPrice());
+        Assertions.assertEquals(SAMPLE_PRICE * SAMPLE_QUANTITY, flowerBucket.getPrice());
         flowerBucket.remove(flowerPack);
         Assertions.assertTrue(flowerBucket.getPacks().isEmpty());
     }

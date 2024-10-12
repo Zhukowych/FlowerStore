@@ -1,6 +1,12 @@
 package org.ucu.edu.flower;
 
-import lombok.*;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.AllArgsConstructor;
+
 
 @Getter
 @Setter
