@@ -11,7 +11,7 @@ public class FlowerBucketTest {
     private static final int MAX_QUANTITY = 1000;
     private static final int MAX_PRICE = 100;
     private static final double SAMPLE_PRICE = 10;
-    private static final double SAMPLE_QUANTITY = 10;
+    private static final int SAMPLE_QUANTITY = 10;
 
     private FlowerBucket flowerBucket;
 
